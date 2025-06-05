@@ -1,0 +1,16 @@
+{
+    "usuarios": {
+        "admin": {
+            "senha": "admin",
+            "tipo": "admin"
+        },
+        "usuario1": {
+            "senha": "1234",
+            "tipo": "user"
+        },
+        "A": {
+            "senha": "B",
+            "tipo": "vip"
+        }
+    }
+}
