@@ -1,14 +1,17 @@
+#Made by Flavin
+#Brazilian repo
+
 import customtkinter as ctk
 import json
 import requests
+ 
+is_admin_logged_in = False #ADMIN Verify
+is_vip_logged_in = False #VIP Verify
 
-is_admin_logged_in = False
-is_vip_logged_in = False
-
-WEBHOOK_URL = "https://discord.com/api/webhooks/1373416947034750996/fwb1dStvCh06tlCgu4xeSrxpRhFTcMLJ4Axd-eAxpG7Vspv-krNHgm"
+WEBHOOK_URL = "" #WEBHOOK For logs
 
 def post():
-    data = {"content": "Connect At SecurityTeam"}
+    data = {"content": "Connect At SecurityTeam"} #data for message in discord
     response = requests.post(WEBHOOK_URL, json=data)
     if response.status_code == 204:
         print("LOG: Mensagem enviada via webhook")
@@ -43,7 +46,7 @@ def abrir_tela_registro():
         user = user_entry.get()
         pwd = pwd_entry.get()
         if user and pwd:
-            salvar_dados(user, pwd, tipo="user")  # Sempre user no registro público
+            salvar_dados(user, pwd, tipo="user")  
             registro.destroy()
         else:
             print("LOG: Preencha todos os campos!")
