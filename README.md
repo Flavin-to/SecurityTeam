@@ -21,24 +21,24 @@ The system allows users to register, log in, and administrators to manage user t
 Before you begin, ensure you have Python installed on your machine. Additionally, you will need to install the following libraries:
 
 ```bash
-pip install customtkinter requests
+pip install customtkinter
 ```
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/your_repository.git
+   git clone https://github.com/Flavin-to/SecurityTeam.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your_repository
+   cd SecurityTeam
    ```
 3. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Open the `main.py` file and configure the `WEBHOOK_URL` variable with your webhook URL for logging.
+4. Open the `main.py` file.
 5. Run the program:
    ```bash
    python main.py
